@@ -5,6 +5,10 @@
 // 1. Create an array named `cities` containing the names of five cities.
 // 2. Access and print the third city in the `cities` array.
 // 3. Modify the second city in the array to a different city of your choice.
+const cities = ["Manila", "San Jose Del Monte", "Quezon", "Tarlac", "Davao"];
+console.log("City 3: " + cities[2]);
+cities[1] = "Antipolo";
+console.log("City 1: " + cities[1]);
 
 // Task 2: Array Operations
 
@@ -12,6 +16,14 @@
 // 5. Add a new fruit to the end of the `fruits` array using the `push()` method.
 // 6. Remove the last fruit from the array using the `pop()` method.
 // 7. Use a loop to iterate through the `fruits` array and print each fruit to the console.
+
+const fruits = ["apple", "orange", "grapes"];
+fruits.push("strawberry");
+fruits.pop();
+
+for (let i = 0;i < fruits.length;i++) {
+    
+}
 
 // Task 3: Advanced Array Techniques
 
