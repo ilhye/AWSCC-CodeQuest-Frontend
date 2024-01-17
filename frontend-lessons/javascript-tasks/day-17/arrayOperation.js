@@ -9,7 +9,6 @@ fruits.push("strawberry"); // [apple, orange, grapes, strawberry]
 fruits.pop(); // [apple, orange, grapes]
 
 // Display fruits using a loop
-fruits.forEach(function(fruit) {
-    console.log(fruit);
+fruits.forEach(function (fruit) {
+  console.log(fruit);
 });
-
