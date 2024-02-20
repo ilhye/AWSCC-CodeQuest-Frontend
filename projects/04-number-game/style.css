@@ -6,6 +6,7 @@ body {
   padding: 0;
   background-color: #3b3486;
 }
+
 h1 {
   font-size: 48px;
   margin-bottom: 30px;
@@ -14,6 +15,7 @@ h1 {
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
 }
+
 .one {
   max-width: 50%;
   height: 450px;
@@ -24,16 +26,19 @@ h1 {
   border-radius: 8px;
   box-shadow: 18px 18px #86a7fc;
 }
+
 .score-board,
 .life-board {
   text-align: center;
 }
+
 .par-label,
 #score,
 #life {
   display: inline-block;
   margin: 0;
 }
+
 .rand-container {
   margin-left: auto;
   margin-right: auto;
@@ -44,39 +49,48 @@ h1 {
   margin-top: 15px;
   margin-bottom: 15px;
 }
+
 #randNumber {
   color: #f9f9f9;
   text-align: center;
   font-size: 36px;
 }
+
 .input-details {
   margin-top: 15px;
 }
+
 #result {
   text-align: center;
   font-size: 19px;
 }
+
 form {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
 .was-validated .form-control:valid {
   background-image: none;
 }
+
 #result,
 .form-control {
   font-family: "Open Sans", sans-serif;
 }
+
 .game-form {
   margin-bottom: 15px;
   margin-right: 5px;
   margin-left: 5px;
 }
+
 input,
 #guess-btn {
   height: 45px;
 }
+
 #guess-btn {
   width: 100px;
   color: white;
@@ -84,10 +98,12 @@ input,
   border: none;
   border-radius: 5px;
 }
+
 #guess-btn:hover {
   color: white;
   background-color: #ff8911;
 }
+
 #reset-btn {
   margin-right: auto;
   margin-left: auto;
@@ -99,31 +115,38 @@ input,
   border: none;
   width: 100px;
 }
+
 #reset-btn:hover {
   background-color: #6c22a6;
 }
+
 @media only screen and (max-width: 769px) {
   .one {
     padding-left: 0;
     padding-right: 0;
     height: fit-content;
   }
+
   h1 {
     font-size: 36px;
   }
+
   p,
   #guess-btn,
   #reset-btn,
   .form-control {
     font-size: 16px;
   }
+
   .rand-container {
     width: 80px;
     height: 60px;
   }
+
   #randNumber {
     font-size: 36px;
   }
+
   #guess-btn {
     width: 75px;
   }
