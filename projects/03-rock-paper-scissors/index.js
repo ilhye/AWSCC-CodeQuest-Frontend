@@ -29,7 +29,7 @@ function displayChoice(gameResult, player1Hand, player2Hand, player1Score, playe
         } else if (player2ChoiceDisplay === 'paper') {
           displayChoice("PLAYER 2 WIN", "👊", "✋", player1Score, ++player2Score);
         } else {
-          displayChoice("IT'S A TIE", "👊", "👊", ++player1Score, ++player2Score);
+          displayChoice("IT'S A TIE", "👊", "👊", player1Score, player2Score);
         } 
         break;
       case 'scissor':
@@ -38,7 +38,7 @@ function displayChoice(gameResult, player1Hand, player2Hand, player1Score, playe
         } else if (player2Choice === 'rock') {
           displayChoice("PLAYER 2 WIN", "✌", "👊", player1Score, ++player2Score);
         } else {
-          displayChoice("IT'S A TIE", "✌", "✌", ++player1Score, ++player2Score);
+          displayChoice("IT'S A TIE", "✌", "✌", player1Score, player2Score);
         }
         break;
       case 'paper':
@@ -47,7 +47,7 @@ function displayChoice(gameResult, player1Hand, player2Hand, player1Score, playe
         } else if (player2Choice === 'scissor') {
           displayChoice("PLAYER 2 WIN", "✋", "✌", player1Score, ++player2Score);
         } else {
-          displayChoice("IT'S A TIE", "✋", "✋", ++player1Score, ++player2Score);
+          displayChoice("IT'S A TIE", "✋", "✋", player1Score, player2Score);
         }
         break;
     }
