@@ -3,10 +3,9 @@ const isMorning = false;
 const isRaining = true;
 
 if (isMorning && isRaining) {
-    console.log("Today is Raining");
+  console.log("Today is Raining");
 }
 if (isMorning || isRaining) {
-    console.log("It is morning and raining");
+  console.log("It is morning and raining");
 }
 console.log(!isMorning);
-

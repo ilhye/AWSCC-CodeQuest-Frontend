@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 id="header">Welcome to my Website</h1>
+
+    <p>This is a sample HTML document.</p>
+
+    <div class="highlight">
+      <h2>About Us</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam feugiat
+        vestibulum dolor, sit amet dictum libero tempor eget. Vestibulum
+        vehicula libero vitae tortor malesuada, eget fringilla ex tristique.
+        Vivamus tristique tellus eu libero aliquet, eget feugiat lacus
+        malesuada.
+      </p>
+    </div>
+
+    <div class="info">
+      <h2>Contact Us</h2>
+      <p>Email: info@example.com</p>
+      <p>Phone: +1 234 567 890</p>
+    </div>
+
+    <script>
+      // Getting Elements by Tag Name
+      const paragraphs = document.getElementsByTagName("p");
+      console.log("Paragraphs: ", paragraphs);
+
+      // Getting Elements by Class Name
+      const info = document.getElementsByClassName("info");
+      console.log("Info: ", info);
+
+      // Getting Elements by Using querySelector
+      const highlight = document.querySelector(".highlight");
+      console.log("Highlight: ", highlight);
+    </script>
+  </body>
+</html>

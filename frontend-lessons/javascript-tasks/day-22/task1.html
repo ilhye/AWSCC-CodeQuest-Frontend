@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Creating an Element with JavaScript</title>
+  </head>
+  <body>
+    <div id="dynamicContainer">
+      <!-- Dynamically created elements will be added here -->
+    </div>
+
+    <script>
+      const dynamicContainer = document.getElementById("dynamicContainer");
+
+      // Create a new img element
+      const newImage = document.createElement("img");
+
+      // Set attributes
+      newImage.src = "./assets/cutie.jpg";
+      newImage.style.width = "200px";
+      newImage.alt = "Dynamically created image";
+
+      // Append the new element to the container
+      dynamicContainer.appendChild(newImage);
+    </script>
+  </body>
+</html>

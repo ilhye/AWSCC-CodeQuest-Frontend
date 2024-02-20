@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Keypress Event Listener Assignment</title>
+  </head>
+  <body>
+    <label for="myInput">Type Something:</label>
+    <input type="text" id="myInput" />
+
+    <script>
+      // JavaScript Code
+      document.getElementById("myInput").addEventListener("keypress", function (event) {
+        // Your code to handle the keypress event goes here
+        console.log("Keypress event:", event.key);
+      });
+
+    </script>
+  </body>
+</html>

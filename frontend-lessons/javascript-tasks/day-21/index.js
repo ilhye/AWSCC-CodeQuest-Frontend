@@ -22,11 +22,11 @@
 //    <body>
 //        <a id="myLink" href="#">Click me</a>
 
-//        <script>
+//        <scripnt>
 //            // JavaScript Code
 //            const myLink = document.getElementById('myLink');
 //            myLink.setAttribute('target', '_blank');
-//            console.log(myLink);
+//            cosole.log(myLink);
 //        </script>
 //    </body>
 //    </html>

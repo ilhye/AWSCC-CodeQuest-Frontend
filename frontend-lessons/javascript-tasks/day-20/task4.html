@@ -1,0 +1,23 @@
+<!--
+// Task 4: Removing Elements
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Removing Elements</title>
+  </head>
+  <body>
+    <h3>Remove Element</h3>
+    <div id="remElmnt">
+      <p>Stay element</p>
+      <p>Will remove</p>
+    </div>
+  </body>
+  <script>
+    const rem = document.getElementById("remElmnt");
+    rem.removeChild(rem.lastElementChild);
+  </script>
+</html>

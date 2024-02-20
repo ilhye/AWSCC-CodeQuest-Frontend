@@ -1,0 +1,28 @@
+<!--
+    // Task 2: Modifying Elements
+
+// 3. Change the text content of the second paragraph to "This paragraph is now updated!".
+// 4. Change the background color of the div with the ID "header" to a different color of your choice.
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modifying Elements</title>
+  </head>
+  <body>
+    <div id="header">
+      <h1>Heading</h1>
+    </div>
+    <p>First paragraph</p>
+    <p class="second">Second paragraph</p>
+    <script>
+      // Modify the background color
+      document.getElementById("header").style.backgroundColor = "pink";
+
+      // Modify second paragraph
+      document.querySelector(".second").textContent = "This paragraph is now updated!";
+    </script>
+  </body>
+</html>

@@ -1,0 +1,25 @@
+<!--
+    // Task 5: Handling Events
+
+// 8. Add a click event listener to the div with the ID "header" that logs "Header clicked!" to the console when clicked.
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Handling Events</title>
+  </head>
+  <body>
+    <div id="header">
+      <h1>Header</h1>
+    </div>
+    <script>
+      document.getElementById("header").addEventListener("click", display);
+
+      function display() {
+        console.log("Header Clicked");
+      }
+    </script>
+  </body>
+</html>
