@@ -7,17 +7,9 @@ const feedback = document.querySelector(".valid-feedback");
 const randContainer = document.querySelector(".rand-container");
 const score = document.getElementById("score");
 const life = document.getElementById("life");
-let scoreCount = 0,
-    lifeCount = 3;
+let scoreCount = 0,lifeCount = 3;
 
-function updateDisplay(
-    message,
-    color,
-    bgColor,
-    fbMessage,
-    feedbackColor,
-    borderColor
-) {
+function updateDisplay(message, color, bgColor, fbMessage, feedbackColor, borderColor) {
     result.innerHTML = message;
     result.style.color = color;
     randContainer.style.backgroundColor = bgColor;
@@ -25,6 +17,7 @@ function updateDisplay(
     feedback.style.color = feedbackColor;
     feedback.style.borderColor = borderColor;
 }
+
 // Guess number
 guessBtn.addEventListener("click", function (play) {
     event.preventDefault();
@@ -33,8 +26,6 @@ guessBtn.addEventListener("click", function (play) {
 
     if (lifeCount === 0) {
         alert("No Remaining Life Left");
-    } else if (input.value === "") {
-        alert("Please enter positive integer");
     }
 
     if (lifeCount > 0 && input.value > -1 && input.value !== "") {
@@ -59,11 +50,9 @@ guessBtn.addEventListener("click", function (play) {
 
 // Reset
 resetBtn.addEventListener("click", function (reset) {
-    result.innerHTML = "";
+    updateDisplay("", "", "#F72798", "", "", "");
     toGuess.innerHTML = "?";
     input.value = "";
-    feedback.innerHTML = "";
-    randContainer.style.backgroundColor = "#F72798";
     input.style.borderColor = "";
     input.style.boxShadow = "";
     life.innerHTML = "3";
