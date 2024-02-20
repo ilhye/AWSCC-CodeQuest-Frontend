@@ -10,38 +10,43 @@
 </head>
 
 <body>
-  <div class="one">
-    <h1 id="header">GUESS THE NUMBER!</h1>
-    <div class="row board-container">
-      <div class="col-sm-6 score-board">
-        <p class="par-label">Score:</p>
-        <p id="score">0</p>
+  <div class="card one">
+    <div class="card-body">
+      <h1 id="card-title">GUESS THE NUMBER!</h1>
+      <div class="row board-container">
+        <div class="col-sm-6 score-board">
+          <p class="par-label">Score:</p>
+          <p id="score">0</p>
+        </div>
+        <div class="col-sm-6 life-board">
+          <p class="par-label">Remaining Life:</p>
+          <p id="life">3</p>
+        </div>
       </div>
-      <div class="col-sm-6 life-board">
-        <p class="par-label">Remaining Life:</p>
-        <p id="life">3</p>
-      </div>
-    </div>
 
-    <div class="rand-container">
-      <p id="randNumber">?</p>
-    </div>
-    <p id="result"></p>
-    <form class="was-validated">
-      <div class="row game-form">
-        <div class="col-sm-8">
-          <input type="text" class="form-control" id="number-inpt" placeholder="Enter a number" pattern="\d+"
-            required />
-          <div class="valid-feedback"></div>
-          <div class="invalid-feedback">Positive number only.</div>
-        </div>
-        <div class="col-sm-4">
-          <button id="guess-btn">Guess</button>
-        </div>
+      <div class="rand-container">
+        <p id="randNumber">?</p>
       </div>
-    </form>
-    <div class="row">
-      <button class="col-sm-12" id="reset-btn">Reset</button>
+
+      <p id="result"></p>
+
+      <form class="was-validated">
+        <div class="row game-form">
+          <div class="col-sm-8">
+            <input type="text" class="form-control" id="number-inpt" placeholder="Enter a number" pattern="\d+"
+              required />
+            <div class="valid-feedback"></div>
+            <div class="invalid-feedback">Please enter a positive number.</div>
+          </div>
+          <div class="col-sm-4">
+            <button id="guess-btn">Guess</button>
+          </div>
+        </div>
+      </form>
+      
+      <div class="row">
+        <button class="col-sm-12" id="reset-btn">Reset</button>
+      </div>
     </div>
   </div>
 
