@@ -2,35 +2,61 @@
 const choices = ["rock", "paper", "scissors"];
 
 // Step 2: Get references to HTML elements
-const player1ChoiceDisplay = // Get the element with the id of "player1-choice-display"
-const player1ScoreDisplay = // Get the element with the id of "player1-score"
-const player2ChoiceDisplay = // Get the element with the id of "player2-choice-display"
-const player2ScoreDisplay = // Get the element with the id of "player2-score"
-
-const gameStatusDisplay = // Get the element with the id of "game-status"
-const resetGameButton = // Get the element with the id of "reset-game-btn"
-
-const rockBtn = // Get the element with the id of "rock-btn"
-const paperBtn = // Get the element with the id of "paper-btn"
-const scissorsBtn = // Get the element with the id of "scissors-btn"
+const handSign = ["rock", "paper", "scissor"];
+const result = document.getElementById("result");
+const player1ChoiceDisplay = document.getElementById("player1Choice");
+const player2ChoiceDisplay = document.getElementById("player2Choice");
+const player1ScoreDisplay = document.getElementById("player1-score");
+const player2ScoreDisplay = document.getElementById("player2-score");
+let player1Score = 0, player2Score = 0;
 
 // Step 3: Add event listeners to the buttons
-rockBtn.addEventListener("click", function () {
+function displayChoice(gameResult, player1Hand, player2Hand, player1Score, player2Score) {
+    result.innerHTML = gameResult;
+    player1ChoiceDisplay.innerHTML = player1Hand;
+    player2ChoiceDisplay.innerHTML = player2Hand;
+    player1ScoreDisplay.innerHTML = player1Score;
+    player2ScoreDisplay.innerHTML = player2Score;
+  }
 
-});
+  function userChoice(player1Choice) {
+    const player2Choice = handSign[Math.floor(Math.random() * handSign.length)];
 
-paperBtn.addEventListener("click", function () {
+    switch (player1Choice) {
+      case 'rock':
+        if (player2Choice === 'scissor') {
+          displayChoice("PLAYER 1 WIN", "👊", "✌", ++player1Score, player2Score);
+        } else if (player2ChoiceDisplay === 'paper') {
+          displayChoice("PLAYER 2 WIN", "👊", "✋", player1Score, ++player2Score);
+        } else {
+          displayChoice("IT'S A TIE", "👊", "👊", ++player1Score, ++player2Score);
+        } 
+        break;
+      case 'scissor':
+        if (player2Choice === 'paper') {
+          displayChoice("PLAYER 1 WIN", "✌", "✋", ++player1Score, player2Score);
+        } else if (player2Choice === 'rock') {
+          displayChoice("PLAYER 2 WIN", "✌", "👊", player1Score, ++player2Score);
+        } else {
+          displayChoice("IT'S A TIE", "✌", "✌", ++player1Score, ++player2Score);
+        }
+        break;
+      case 'paper':
+        if (player2Choice === 'rock') {
+          displayChoice("PLAYER 1 WIN", "✋", "👊", ++player1Score, player2Score);
+        } else if (player2Choice === 'scissor') {
+          displayChoice("PLAYER 2 WIN", "✋", "✌", player1Score, ++player2Score);
+        } else {
+          displayChoice("IT'S A TIE", "✋", "✋", ++player1Score, ++player2Score);
+        }
+        break;
+    }
+  }
 
-});
-
-scissorsBtn.addEventListener("click", function () {
-
-});
-
-resetGameButton.addEventListener("click", function () { 
-    
-});
-
-// Step 4: Define helper functions that will be the actions of the game
-
-// Step 5: Embrace mistakes as opportunities for learning and improvement, and fuel your curiosity by exploring new the wonders of frontend development. The vast tech world is filled with exciting discoveries waiting for you. Ask when you have the need or want to! Just keep coding!
+  function goBack(reset) {
+    if (reset === "reset") {
+      displayChoice("SHOW YOUR HAND TO START THE GAME", "", "", 0, 0); 
+      player1Score = 0;
+      player2Score = 0;
+    }
+  }
