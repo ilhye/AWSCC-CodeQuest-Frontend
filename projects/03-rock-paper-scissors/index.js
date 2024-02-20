@@ -2,7 +2,6 @@
 const choices = ["rock", "paper", "scissors"];
 
 // Step 2: Get references to HTML elements
-const handSign = ["rock", "paper", "scissor"];
 const result = document.getElementById("result");
 const player1ChoiceDisplay = document.getElementById("player1Choice");
 const player2ChoiceDisplay = document.getElementById("player2Choice");
@@ -20,7 +19,7 @@ function displayChoice(gameResult, player1Hand, player2Hand, player1Score, playe
   }
 
   function userChoice(player1Choice) {
-    const player2Choice = handSign[Math.floor(Math.random() * handSign.length)];
+    const player2Choice = choices[Math.floor(Math.random() * 3)];
 
     switch (player1Choice) {
       case 'rock':
