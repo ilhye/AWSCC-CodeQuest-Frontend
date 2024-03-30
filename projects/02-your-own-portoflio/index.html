@@ -1,1 +1,308 @@
-<!-- GO WILD AND BE CREATIVE! -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#">Cristina Villasor</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon" style="color: navbar-brand"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#home"> Home </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about"> About Me </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects"> Projects </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact"> Contact Me </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section id="home">
+      <div class="container home-wrapper">
+        <div class="row">
+          <div class="left-section1 col-sm-6">
+            <p>Hello, I'm</p>
+            <span id="gradient-text">Cristina</span>
+            <div class="icons">
+              <a href="https://www.instagram.com/qokoemi_tine/">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+              <a href="https://www.facebook.com/profile.php?id=100076633320821">
+                <i class="fa-brands fa-facebook"></i>
+              </a>
+              <a
+                href="https://www.linkedin.com/in/cristina-villasor-342448296/"
+              >
+                <i class="fa-brands fa-linkedin"></i>
+              </a>
+              <a href="https://github.com/ilhye">
+                <i class="fa-brands fa-github"></i>
+              </a>
+            </div>
+          </div>
+          <div class="right-section1 col-sm-6 text-center">
+            <img
+              class="img-fluid rounded-circle"
+              src="./assets/active-woman.png"
+              alt="Profile Pic"
+              class="prof-pic"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-5 left-about text-center">
+            <img
+              src="./assets/using-tab.png"
+              class="about-pic img-fluid"
+              alt="Woman"
+            />
+          </div>
+          <div class="col-sm-7 right-about">
+            <div class="row">
+              <div class="col">
+                <h1 class="about-heading">About Me</h1>
+                <p class="about-text">
+                  Hey, I'm Tina, a second-year
+                  <span style="font-weight: bold">Computer Science</span>
+                  student at
+                  <span style="font-weight: bold"
+                    >Polytechnic University of the Philippines</span
+                  >, currently honing my skills as a
+                  <span style="font-weight: bold">
+                    Junior Frontend Developer at AWSCC-DSWD </span
+                  >, where I engage in continuous learning and skill-building.
+                  With a passion for technology and a focus on frontend
+                  development, I'm driven by a desire to create innovative
+                  solutions that address real-world challenges. Proficient in
+                  <span style="font-weight: bold"
+                    >HTML, CSS, and JavaScript</span
+                  >, I'm eager to expand my skills in backend development and
+                  cloud computing. My goal is to become a versatile software
+                  engineer, making a positive impact through technology-driven
+                  solutions. Thanks for learning about me—I'm excited for the
+                  journey ahead!
+                </p>
+              </div>
+            </div>
+            <div class="row background">
+              <div class="col">
+                <p onclick="userChoice('skills')" class="choice">Skill</p>
+                <p onclick="userChoice('education')" class="choice">
+                  Education
+                </p>
+                <p id="more-info"></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <div class="container">
+        <h1>My Projects</h1>
+        <div class="row">
+          <div class="col proj-container">
+            <img
+              src="./assets/BankSystem.png"
+              alt="Bank System"
+              class="proj-img img-fluid"
+            />
+            <p class="proj-desc">
+              A comprehensive banking system designed to manage customer
+              accounts, transactions, and financial operations efficiently,
+              ensuring secure and seamless banking services.
+            </p>
+          </div>
+          <div class="col proj-container">
+            <img
+              src="./assets/ShoeInventory.png"
+              alt="Shoe Inventory"
+              class="proj-img img-fluid"
+            />
+            <p class="proj-desc">
+              An inventory management system tailored for shoe retailers,
+              facilitating the tracking of various shoe models, sizes, and stock
+              levels to optimize sales and inventory replenishment.
+            </p>
+          </div>
+          <div class="col proj-container">
+            <img
+              src="./assets/pup main-unified information system.png"
+              alt="PUP Main-Unified Information System"
+              class="proj-img img-fluid"
+            />
+            <p class="proj-desc">
+              An integrated information system developed for PUP Main campus,
+              aimed at streamlining administrative tasks, academic processes,
+              and student services for enhanced organizational efficiency and
+              student satisfaction.
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col proj-container">
+            <img
+              src="./assets/rock-paper-scissor.png"
+              alt="rock-paper-scissors"
+              class="proj-img img-fluid"
+            />
+            <p class="proj-desc">
+              A classic game implementation where players engage in a simple yet
+              entertaining competition of rock-paper-scissors, offering a fun
+              way to pass the time and challenge friends to quick matches of
+              strategy and luck.
+            </p>
+          </div>
+          <div class="col proj-container">
+            <img
+              src="./assets/guess-the-number.png"
+              alt="Guess the number"
+              class="proj-img img-fluid"
+            />
+            <p class="proj-desc">
+              A number guessing game where players attempt to guess a randomly
+              generated number within a specified range, testing their intuition
+              and deductive reasoning skills in an enjoyable and addictive
+              gameplay experience.
+            </p>
+          </div>
+          <div class="col proj-container">
+            <img
+              src="./assets/BlogWebsite.png"
+              alt="Blog Website"
+              class="proj-img img-fluid"
+            />
+            <p class="proj-desc">
+              A platform for publishing and sharing articles, ideas, and stories
+              online, providing users with a space to express themselves, engage
+              with diverse content, and interact with a community of like-minded
+              individuals.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container">
+        <form>
+          <div class="form-group">
+            <label for="email" class="form-label">Email:</label>
+            <input
+              type="email"
+              class="form-control"
+              id="email"
+              placeholder="Enter email"
+              name="email"
+            />
+          </div>
+          <div class="form-group">
+            <label for="subject" class="form-label">Subject:</label>
+            <input
+              type="text"
+              class="form-control"
+              id="subject"
+              placeholder="Enter subject"
+              name="subject"
+            />
+          </div>
+          <div class="form-group">
+            <label for="message" class="form-label">Message:</label>
+            <textarea
+              class="form-control"
+              name="message"
+              id="message"
+              cols="10"
+              rows="3"
+              placeholder="Enter message"
+            ></textarea>
+          </div>
+          <button>Submit</button>
+        </form>
+      </div>
+    </section>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+      const paragraph = document.getElementById("more-info");
+      var typed = new Typed("#gradient-text", {
+        strings: ["Cristina", "Web Developer"],
+        typeSpeed: 150,
+        backSpeed: 150,
+        loop: true,
+      });
+
+      function userChoice(choice) {
+        switch (choice) {
+          case "skills":
+            paragraph.innerHTML = `
+            <div class="row p-0 mx-0">
+              <div class="col p-0">
+                <ul>
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>JavaScript</li>
+                </ul>
+              </div>
+            <div class="col p-0">
+              <ul>
+                <li>C</li>
+                <li>Java</li>
+                <li>Python</li>
+              </ul>
+            </div>
+          </div>`;
+            break;
+          case "education":
+            paragraph.innerHTML = `
+          <ul>
+            <li>Bagong Buhay Elementary School</li>
+            <li>Sapang Palay National Highschool</li>
+            <li>Polytechnic University of the Philippines</li>
+          </ul>`;
+            break;
+        }
+      }
+    </script>
+  </body>
+</html>
