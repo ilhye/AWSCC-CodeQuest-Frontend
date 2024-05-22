@@ -1,165 +1,152 @@
 @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
-      @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
-      body {
-        margin: 0;
-        padding: 0;
-        font-family: "Poppins", sans-serif;
-        background-color: #121212;
-        color: white;
-      }
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  background-color: #121212;
+  color: white;
+}
 
-      .navbar a {
-        color: #fffffe;
-      }
-      .navbar a:hover {
-        color: #bae8e8;
-      }
-      .left-section1 {
-        margin: auto 0 auto 0;
-      }
-      #home {
-        padding-top: 110px;
-      }
-      #home p {
-        font-size: 33.18px;
-      }
-      #home img {
-        height: auto;
-      }
-      #home span {
-        font-size: 64px;
-        font-weight: bolder;
-        display: inline-block;
-        background: linear-gradient(
-          43deg,
-          #4158d0 0%,
-          #c850c0 46%,
-          #ffcc70 100%
-        );
-        -webkit-text-fill-color: transparent;
-        -webkit-background-clip: text;
-      }
+.navbar a {
+  color: #fffffe;
+}
+.navbar a:hover {
+  color: #bae8e8;
+}
+.left-section1 {
+  margin: auto 0 auto 0;
+}
+#home {
+  padding-top: 110px;
+}
+#home p {
+  font-size: 33.18px;
+}
+#home img {
+  height: auto;
+}
+#home span {
+  font-size: 64px;
+  font-weight: bolder;
+  display: inline-block;
+  background: linear-gradient(43deg, #4158d0 0%, #c850c0 46%, #ffcc70 100%);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
 
-      #about {
-        padding-top: 75px;
-      }
+#about {
+  padding-top: 75px;
+}
 
-      .left-about {
-        margin: auto;
-        padding-right: 45px;
-      }
-      .right-about {
-        border-radius: 5px;
-        padding: 20px 50px 20px 50px;
-        margin: auto 0 auto 0;
-      }
+.left-about {
+  margin: auto;
+  padding-right: 45px;
+}
+.right-about {
+  border-radius: 5px;
+  padding: 20px 50px 20px 50px;
+  margin: auto 0 auto 0;
+}
 
-      .about-pic {
-        height: auto;
-        background-color: #ff8ba7;
-        border-radius: 200px;
-      }
-      .about-text {
-        font-size: 16px;
-        text-align: justify;
-      }
-      .icons a {
-        text-decoration: none;
-        font-size: 30px;
-        margin-top: 25px;
-        margin-right: 10px;
-        color: white;
-      }
-      .icons a:hover {
-        color: #bae8e8;
-      }
-      .choice {
-        cursor: pointer;
-        display: inline;
-        margin-right: 25px;
-        border-bottom: 2px solid gainsboro;
-      }
-      .choice:hover {
-        border-bottom: 3px solid transparent;
-        border-image: linear-gradient(
-            43deg,
-            #4158d0 0%,
-            #c850c0 46%,
-            #ffcc70 100%
-          )
-          1;
-        font-weight: bold;
-      }
-      .background {
-        height: 130px;
-      }
-      #projects {
-        padding-top: 80px;
-      }
-      #projects h1 {
-        text-align: center;
-        padding-bottom: 20px;
-      }
-      .proj-desc {
-        text-align: justify;
-      }
+.about-pic {
+  height: auto;
+  background-color: #ff8ba7;
+  border-radius: 200px;
+}
+.about-text {
+  font-size: 16px;
+  text-align: justify;
+}
+.icons a {
+  text-decoration: none;
+  font-size: 30px;
+  margin-top: 25px;
+  margin-right: 10px;
+  color: white;
+}
+.icons a:hover {
+  color: #bae8e8;
+}
+.choice {
+  cursor: pointer;
+  display: inline;
+  margin-right: 25px;
+  border-bottom: 2px solid gainsboro;
+}
+.choice:hover {
+  border-bottom: 3px solid transparent;
+  border-image: linear-gradient(43deg, #4158d0 0%, #c850c0 46%, #ffcc70 100%) 1;
+  font-weight: bold;
+}
+.background {
+  height: 130px;
+}
+#projects {
+  padding-top: 80px;
+}
+#projects h1 {
+  text-align: center;
+  padding-bottom: 20px;
+}
+.proj-desc {
+  text-align: justify;
+}
 
-      #contact {
-        padding-top: 120px;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-      }
+#contact {
+  padding-top: 120px;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
 
-      #contact .container {
-        width: 50%;
-      }
-      form {
-        margin: auto;
-      }
+#contact .container {
+  width: 50%;
+}
+form {
+  margin: auto;
+}
 
-      #contact .form-group {
-        margin-bottom: 15px;
-      }
+#contact .form-group {
+  margin-bottom: 15px;
+}
 
-      #contact button {
-        padding: 10px;
-        border-radius: 15px;
-        margin-top: 15px;
-        width: 610px;
-        background-color: #bae8e8;
-        border: transparent;
-      }
-      #contact button:hover {
-        background-color: #6ecfcf;
-      }
-      .icons-contact a {
-        text-decoration: none;
-        font-size: 35px;
-        margin-right: 10px;
-      }
-      
+#contact button {
+  padding: 10px;
+  border-radius: 15px;
+  margin-top: 15px;
+  width: 610px;
+  background-color: #bae8e8;
+  border: transparent;
+}
+#contact button:hover {
+  background-color: #6ecfcf;
+}
+.icons-contact a {
+  text-decoration: none;
+  font-size: 35px;
+  margin-right: 10px;
+}
 
-      @media only screen and (max-width: 769px) {
-        .home-wrapper {
-          margin: auto;
-        }
-        #home img {
-          height: auto;
-        }
-        #about .container {
-          margin-bottom: auto;
-          margin-left: auto;
-          margin-bottom: auto;
-        }
-        .about-heading {
-          font-size: 24px;
-        }
-        .about-text,
-        .choice,
-        #more-info {
-          font-size: 14px;
-        }
-
-      }
+@media only screen and (max-width: 769px) {
+  .home-wrapper {
+    margin: auto;
+  }
+  #home img {
+    height: auto;
+  }
+  #about .container {
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-bottom: auto;
+  }
+  .about-heading {
+    font-size: 24px;
+  }
+  .about-text,
+  .choice,
+  #more-info {
+    font-size: 14px;
+  }
+}
